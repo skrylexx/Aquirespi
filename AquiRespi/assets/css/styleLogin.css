@@ -1,0 +1,366 @@
+/* HEADER*/
+
+header{
+    height: 5rem;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    /*background: url("../img/background-header.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;*/
+}
+
+:root{
+    --hauteur-menu: 4.5em;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Montserrat, sans-serif;
+  }
+  nav {
+    width: 100%;
+    font-size: 1.2em;
+    position: sticky;
+    top: 0;
+    margin-bottom: 2%;
+  }
+
+  nav > ul {
+    display: flex;
+    text-align: center;
+    box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.3);
+    height: var(--hauteur-menu);
+  }
+   
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav > ul > li {
+    background-color: white;
+    position: relative;
+    height: 100%;
+    flex: 1;
+  }
+
+  nav > ul > li > a {
+    position: absolute;
+    font-weight: 450;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .menu-deroulant > a:after{
+    content: '\002794';
+    font-size: 13px;
+    margin-left: 7px;
+    display: inline-block;
+  }
+
+  .sous-menu {
+    margin-top: 5.6em;
+    width: 100%;
+    text-align: left;
+    background-color: white;
+    border-radius: 2px;
+    overflow: hidden;
+    max-height: 0;
+    font-size: 0.8em;
+  }
+  
+  .sous-menu > li > a {
+    height: 50px;
+    padding-left: 20px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+  }
+
+  nav > ul > li:hover > a{
+    color: #2169EC /*#e52675*/;
+  }
+
+  .sous-menu > li:hover {
+    background-color: rgba(33, 105, 236, 0.3) /*rgba(186, 74, 119, 0.3)*/;
+  }
+  
+  .sous-menu > li:hover > a {
+    color: #2169EC /*#e52675*/;
+  }
+
+  @keyframes rotationFleche {
+    0% {
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(90deg);
+    }
+  }
+
+  .menu-deroulant:hover > a:after{
+    animation: rotationFleche 0.2s linear forwards;
+  }
+
+  @keyframes apparitionSousMenu {
+    0% {
+      box-shadow: 0px 3px 3px 2px rgba(0,0,0,0);
+      border-top: 3px solid /*#e52675*/ #2169EC;
+    }
+    30% {
+      box-shadow: 0px 3px 3px 2px rgba(0,0,0,0.3);
+    }
+    100% {
+      max-height: 50em;
+      border-top: 3px solid #2169EC /*#e52675*/;
+      box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+    }
+  }
+
+  .menu-deroulant:hover > .sous-menu {
+    animation: apparitionSousMenu 1s forwards;
+  }
+
+.divLog{
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  margin-right: 2%;
+}
+
+.membre{
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.divLogo{
+  height: 35%;
+  align-items: center;
+  margin-top: 1%;
+  margin-bottom: 2.5%;
+}
+
+.logo{
+  height: 95%;
+}
+
+.divTitleText{
+  font-size: 1.5em;
+  margin-bottom: 3%;
+  font-weight: 400%;
+}
+
+.titleText{
+  font-family: 'Comfortaa', cursive;
+  font-family: 'Dosis', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.flecheScroll{
+  height: 5em;
+}
+
+.aFleche{
+  font-size: 3em;
+  scroll-behavior: smooth;
+}
+
+.aFleche:hover{
+  color: /*rgb(186, 74, 119)*/#2169EC;
+  font-size: 3.3em;
+  transition: 0.5s;
+  padding-top: 5%;
+}
+
+/*.retour{
+    padding-right: 1.5%;
+}
+*/
+.back{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3em;
+    font-weight: 400;
+   margin-left: 96%;
+   
+}
+
+main{
+    display: flex;
+    height: 45em;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/background-header.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.login-form{
+    height: 30em;
+    width: 40em;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.formulaire{
+    height: 24em;
+    width: 24em;
+    border-radius: 20px;
+    background-color: #f1f2f6;
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title{
+    height: 3.5em;
+    font-size: 1.5em;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline 2px;
+    margin-bottom: 2%;
+    font-family: Montserrat, sans-serif;
+}
+
+.centre{
+    height: 13.5em;
+    display: block;
+    align-items: center;
+    margin-top: 3%;
+    margin-bottom: -4%;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.mail{
+    height: 5em;
+    display: content;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    font-size: 1.2em;
+}
+
+.mail > input{
+    width: 15em;
+    height: 2em;
+    border-radius: 10px;
+    border: none;
+}
+
+.password{
+    height: 5em;
+    display: content;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.password > input{
+    width: 15em;
+    height: 2em;
+    border-radius: 10px;
+    border: none;
+}
+
+.sub{
+    height: 3.5em;
+}
+
+.sub > button{
+    height: 3em;
+    width: 8em;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 3%;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    background-color: #3637378f;
+}
+
+.sub > button:hover{
+    background-color: #363737;
+    color : #E8E8E8;
+}
+
+footer{
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #363737;
+    color: #E8E8E8;
+    padding-top: 1.5%;
+    font-family: Montserrat, sans-serif;
+}
+
+.divGauche{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 100%;
+}
+
+.prez{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.gauche{
+    padding-left: 2%;
+}
+
+.droite{
+    padding-left: 2%;
+}
+
+.divDroite{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 100%;
+}
+
+.white{
+    color: #D3D3D3;
+  } 
+
+  span:hover{
+    color: #2C75FF;
+    text-decoration: underline #2C75FF;
+  }
+  
+a{
+    text-decoration: none;
+}
+
+.alert{
+    color: red;
+    position: absolute;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;;
+}
+
+
+/*FIN HEADER*/

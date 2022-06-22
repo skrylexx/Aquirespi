@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+main{
+  background: url('https://evolu-tif.com/wp-content/uploads/2016/01/grey-background-wallpaper-23.jpg') no-repeat;
+  background-size: cover;
+}
+
+header{
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E8E8E8;
+}
+
+.divLogo{
+    height: 110%;
+    width: 20%;
+    display: flex;
+    padding-left: 1.5%;
+    align-items: center;
+}
+
+.logo{
+    height: 80%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;1,300&display=swap');
+
+.affichage{
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+.divAffichage{
+    padding-right: 1.5%;
+    height: 110%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 1em;
+}
+
+a:visited{
+    color:#363737;
+}
+
+.divDeconnexion{
+    height: 110%;
+    width: 20%;
+    display: flex;
+    padding-left: 1.5%;
+    align-items: center;
+    justify-content: end;
+}
+
+.deconnexion{
+    font-size: 1.3em;    
+    margin-right: 10px;
+}
