@@ -1,0 +1,139 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: Montserrat, sans-serif;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+main{
+    display: flex;
+    height: 46em;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/unknown.png");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.login-form{
+    height: 30em;
+    width: 40em;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.form-control{
+    padding-left: 5px;
+}
+
+.formulaire{
+    height: 24em;
+    width: 24em;
+    border-radius: 20px;
+    background-color: #e6e6e9d7;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title{
+    height: 3.5em;
+    font-size: 1.5em;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline 2px;
+    margin-bottom: 2%;
+    font-family: Montserrat, sans-serif;
+}
+
+.centre{
+    height: 13.5em;
+    display: block;
+    align-items: center;
+    margin-top: 3%;
+    margin-bottom: -4%;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.mail{
+    height: 5em;
+    display: content;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    font-size: 1.2em;
+}
+
+.mail > input{
+    width: 15em;
+    height: 2em;
+    border-radius: 10px;
+    border: none;
+}
+
+.password{
+    height: 5em;
+    display: content;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.password > input{
+    width: 15em;
+    height: 2em;
+    border-radius: 10px;
+    border: none;
+}
+
+.sub{
+    height: 3.5em;
+}
+
+.sub > button{
+    height: 3em;
+    width: 8em;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 3%;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    background-color: #3637378f;
+}
+
+.sub > button:hover{
+    background-color: #363737;
+    color : #E8E8E8;
+}
+
+  span:hover{
+    color: #2C75FF;
+    text-decoration: underline #2C75FF;
+  }
+  
+a{
+    text-decoration: none;
+}
+
+.alert{
+    color: red;
+    position: absolute;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;;
+}
+
+
+/*FIN HEADER*/
